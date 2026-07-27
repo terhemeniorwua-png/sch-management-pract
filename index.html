@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <section class="grid grid-cols-2 gap-[15%] justify-around  px-[10%] pt-[5%]">
+    <section class="grid grid-cols-2 gap-[15%] justify-around  px-[10%] pt-[5%] hidden">
         <!-- Student login -->
         <div class="flex flex-col gap-10">
 
@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <input type="submit" name="Login" id="login" class="bg-green-500 w-full text-white rounded-2xl py-5">
+                <input type="submit" value="Login" id="login" class="bg-green-500 w-full text-white rounded-2xl py-5">
             </form>
         </div>
 
@@ -69,11 +69,46 @@
                     </div>
                 </div>
 
-                <input type="submit" name="Login" id="login" class="bg-gray-500 w-full text-white rounded-2xl py-5">
+                <input type="submit" value="Login" id="login" class="bg-gray-500 w-full text-white rounded-2xl py-5">
             </form>
         </div>
     </section>
 
+
+    <!-- signup form for student -->
+
+    <section class="w-[70%] m-auto flex justify-center pt-10">
+
+        <!-- student signup -->
+        <div class="flex flex-col items-center gap-10 p-5 px-8 rounded-lg shadow-2xl border">
+            <h1 class="text-5xl font-black text-gray-600">Sign up as student</h1>
+
+            <form action="" class="space-y-10">
+                <input type="text" name="" id="" placeholder="Enter your full name here" class="outline-0 border-2 pr-5 w-full py-2 rounded-lg pl-2"><br>
+
+                <input type="text" name="" id="" placeholder="Enter your age here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2"><br>
+
+                <select name="" id="" class="outline-0 border-2 pr-5 py-2 rounded-lg pl-2 w-full">
+                    <option value="" selected disabled>Choose your course</option>
+                    <option value="">Computer Science</option>
+                    <option value="">Mathematics</option>
+                    <option value="">Mass Comunication</option>
+                    <option value="">Law</option>
+                    <option value="">Agriculture</option>
+                    <option value="">Accounting</option>
+                    <option value="">Commerce</option>
+                    <option value="">Physics</option>
+                    <option value="">Medicine and surgery</option>
+                </select> <br>
+
+                <input type="email" name="" id="" placeholder="Enter your email here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2"><br>
+
+                <input type="text" name="" id="" placeholder="Enter your class name here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2">
+
+                <input type="submit" value="Sign up" id="login" class="bg-gray-500 w-full text-white w-full rounded-2xl py-5">
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

@@ -27,6 +27,8 @@ Methods:
 
 displayInfo()
 updateGrade(newGrade)
+
+
 Part 2: Store Students
 
 Create an array called

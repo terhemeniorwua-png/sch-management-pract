@@ -53,6 +53,8 @@ Create a new Student object.
 Generate an ID automatically.
 Push it into the array.
 Display it on the page.
+
+
 Part 4: Display Students
 
 Use:

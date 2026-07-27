@@ -11,9 +11,9 @@
 </head>
 <body>
 
-    <section class="grid grid-cols-2 gap-[15%] justify-around  px-[10%] pt-[5%] hidden">
+    <section class="grid grid-cols-2 gap-[15%] justify-around  px-[10%] pt-[5%] ">
         <!-- Student login -->
-        <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-10 rounded-lg shadow-2xl border p-8">
 
             <h1 class="text-5xl font-black text-gray-600">Student LogIn</h1>
             <p class="text-lg text-gray-500">Not a student? <a href="#" id="studentSignUp" class="text-blue-500">sign up</a></p>
@@ -45,7 +45,7 @@
 
 <!-- Staff login form -->
 
-        <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-10 rounded-lg shadow-2xl border p-8">
             <h1 class="text-5xl font-black text-gray-600">Staff LogIn</h1>
             <p class="text-lg text-gray-500">Not a Staff? <a href="#" id="studentSignUp" class="text-blue-500">sign up</a></p>
 
@@ -77,18 +77,27 @@
 
     <!-- signup form for student -->
 
-    <section class="w-[70%] m-auto flex justify-center pt-10">
+    <section class="w-[45%] m-auto flex justify-center pt-10 hidden">
 
         <!-- student signup -->
-        <div class="flex flex-col items-center gap-10 p-5 px-8 rounded-lg shadow-2xl border">
+        <div class="flex flex-col items-center gap-10 p-5 px-[10%] rounded-lg shadow-2xl border">
             <h1 class="text-5xl font-black text-gray-600">Sign up as student</h1>
 
-            <form action="" class="space-y-10">
-                <input type="text" name="" id="" placeholder="Enter your full name here" class="outline-0 border-2 pr-5 w-full py-2 rounded-lg pl-2"><br>
+            <form action="" class="space-y-10 px-[12%]">
+                <input type="text" name="" id="" placeholder="Enter your full name here" class="outline-0 border-2 pr-5 w-full py-3 rounded-lg pl-2"><br>
+            <p class="hidden">Name must be more not include special character or number</p>
 
-                <input type="text" name="" id="" placeholder="Enter your age here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2"><br>
+                <input type="text" name="" id="" placeholder="Enter your age here" class="outline-0 border-2 pr-5 w-full py-3 rounded-lg pl-2"><br>
+                <p class="hidden">Age must be a number and between 18-20</p>
 
-                <select name="" id="" class="outline-0 border-2 pr-5 py-2 rounded-lg pl-2 w-full">
+                    <input type="password" name="" id="" placeholder="New password" class="outline-0 border-2 pr-5 py-3 w-full rounded-lg pl-2">
+                 <p class="hidden">password must be alphanumeric and can contain (_.- #, *) and my be between 5and 10 characters long</p>
+
+
+                  <input type="password" name="" id="" placeholder="COnfirm password" class="outline-0 border-2 pr-5 py-3 w-full rounded-lg pl-2">
+                <p class="hidden">password does not does not match</p>
+
+                <select name="" id="" class="outline-0 border-2 pr-5 py-3 rounded-lg pl-2 w-full">
                     <option value="" selected disabled>Choose your course</option>
                     <option value="">Computer Science</option>
                     <option value="">Mathematics</option>
@@ -101,12 +110,70 @@
                     <option value="">Medicine and surgery</option>
                 </select> <br>
 
-                <input type="email" name="" id="" placeholder="Enter your email here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2"><br>
+                <input type="email" name="" id="" placeholder="Enter your email here" class="outline-0 border-2 pr-5 py-3 w-full rounded-lg pl-2"><br>
+                <p class="hidden">Email must be a valid email addrrss e.g my@domain.com</p>
 
-                <input type="text" name="" id="" placeholder="Enter your class name here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2">
+                <div>
+                <input type="text" name="" id="" placeholder="Enter your class name here" class="outline-0 border-2 pr-5 py-3 w-full rounded-lg pl-2">
+                <p class="hidden">class must be alphanumeric</p>
 
-                <input type="submit" value="Sign up" id="login" class="bg-gray-500 w-full text-white w-full rounded-2xl py-5">
+                    <p class="text-gray-500 text-sm pt-0">Already a student? <a href="#" class="text-blue-500">Back to Login</a></p>
+                    </div>
+
+                <input type="submit" value="Sign up" id="login" class="bg-gray-500 w-full text-white rounded-2xl py-5">
+                
             </form>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="flex hidden">
+
+
+        <!-- Sign up as a staff -->
+       
+        <div class="flex flex-col items-center gap-10 p-5 px-8 rounded-lg shadow-2xl border">
+            <h1 class="text-5xl font-black text-gray-600">Sign up as a staff</h1>
+
+            <form action="" class="space-y-10">
+                <input type="text" name="" id="" placeholder="Enter your w-full name here" class="outline-0 border-2 pr-5 w-full py-2 rounded-lg pl-2"><br>
+            <p class="hidden">Name must be more not include special character or number</p>
+
+
+                <input type="email" name="" id="" placeholder="Enter your email here" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2"><br>
+                <p class="hidden">Email must be a valid email addrrss e.g my@domain.com</p>
+
+                <input type="password" name="" id="" placeholder="New password" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2">
+                 <p class="hidden">password must be alphanumeric and can contain (_.- #, *) and my be between 5and 10 characters long</p>
+
+
+                <div>
+                  <input type="password" name="" id="" placeholder="COnfirm password" class="outline-0 border-2 pr-5 py-2 w-full rounded-lg pl-2">
+                <p class="hidden">password does not does not match</p>
+
+                    <p class="text-gray-500 text-sm pt-0">Already a student? <a href="#" class="text-blue-500">Back to Login</a></p>
+                    </div>
+
+                <input type="submit" value="Sign up" id="login" class="bg-gray-500 w-full text-white rounded-2xl py-5">
+                
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Password Recovery form -->
+    <section class="w-[45%] m-auto flex justify-center pt-10 hidden">
+
+        <div class="flex flex-col items-center gap-10 p-5 px-[10%] rounded-lg shadow-2xl border">
+            <h1 class="text-5xl font-black text-gray-600">Recover Your Password</h1>
+
+        <form action="">
+
+            <input type="email" name="" id="" placeholder="Input your email" class="outline-0 border-b-2 border-b-gray-500 pb-2">
+        </form>
         </div>
     </section>
 
